@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Button Types with Bootstrap</title>
+    <!-- ✅ Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<div style="text-align: center;">
+    <a href="index.html" class="btn btn-info btn-lg ">Home Page</a>
+</div>
+
+
+<body class="bg-light">
+
+    <div class="container py-5">
+        <h2 class="text-center text-primary mb-4">HTML Button Types</h2>
+        <p class="lead">In HTML, the <code>&lt;button&gt;</code> element can have different types based on the
+            <code>type</code> attribute. Each type serves a specific purpose.
+        </p>
+
+        <hr>
+
+        <!-- Button type="button" -->
+        <div class="mb-4">
+            <h4>1. <code>type="button"</code></h4>
+            <p><strong>Purpose:</strong> A general-purpose button that does not have any default behavior. Typically
+                used with JavaScript.</p>
+            <button type="button" class="btn btn-primary" onclick="alert('Button clicked!')">Click Me</button>
+        </div>
+
+        <!-- Button type="submit" -->
+        <div class="mb-4">
+            <h4>2. <code>type="submit"</code></h4>
+            <p><strong>Purpose:</strong> Submits the form data to the server.</p>
+            <form action="/submit" method="post" class="d-flex gap-2">
+                <input type="text" name="username" class="form-control" placeholder="Enter your name">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+
+        <!-- Button type="reset" -->
+        <div class="mb-4">
+            <h4>3. <code>type="reset"</code></h4>
+            <p><strong>Purpose:</strong> Resets all form fields to their initial values.</p>
+            <form class="d-flex gap-2">
+                <input type="text" name="username" class="form-control" placeholder="Enter your name">
+                <button type="reset" class="btn btn-warning">Reset</button>
+            </form>
+        </div>
+
+        <!-- Default Button -->
+        <div class="mb-4">
+            <h4>4. No <code>type</code> Attribute</h4>
+            <p><strong>Default behavior:</strong></p>
+            <ul>
+                <li>Inside a form → acts as <code>submit</code>.</li>
+                <li>Outside a form → acts as <code>button</code>.</li>
+            </ul>
+            <button class="btn btn-secondary">Default Button</button>
+        </div>
+
+        <hr>
+        <p class="text-muted"><strong>Additional Notes:</strong> Buttons can be styled with Bootstrap’s button classes
+            (<code>.btn-primary</code>, <code>.btn-success</code>, etc.). Always ensure accessibility with meaningful
+            text or <code>aria-label</code>.</p>
+    </div>
+
+    <!-- ✅ Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

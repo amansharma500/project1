@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Documentation</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* 3D card effect */
+        .card-3d {
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-heading {
+            font-weight: bold;
+            color: #0d6efd;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+        }
+
+        .callout {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<div style="text-align: center;">
+    <a href="index.html" class="btn btn-info btn-lg ">Home Page</a>
+</div>
+
+
+<body class="bg-light">
+
+    <div class="container py-5">
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">HTML (HyperText Markup Language)</h1>
+            <p class="lead">Référence, tutoriels et concepts essentiels du langage HTML</p>
+        </div>
+
+        <!-- Intro Section -->
+        <div class="card card-3d p-4 mb-4">
+            <section class="content-section">
+                <p><strong>HTML</strong> signifie « <em>HyperText Markup Language</em> » qu'on peut traduire par «
+                    langage de balises
+                    pour l'hypertexte »...</p>
+                <p>L'« hypertexte » désigne les liens qui relient les pages web entre elles...</p>
+                <p>Le langage HTML utilise des « balises » pour annoter du texte, des images et d'autres contenus...</p>
+            </section>
+        </div>
+
+        <!-- Ressources clés -->
+        <div class="card card-3d p-4 mb-4">
+            <h2 class="section-heading">📌 Ressources </h2>
+            <dl>
+                <dt>Introduction au HTML</dt>
+                <dd>Articles sur les bases de HTML expliquent ce qu'est HTML et comment l'utiliser.</dd>
+
+                <dt>Tutoriels HTML</dt>
+                <dd>Pour plus d'informations... consultez notre section Apprendre HTML.</dd>
+
+                <dt>Référence HTML</dt>
+                <dd>Référence exhaustive avec chaque élément et attribut.</dd>
+            </dl>
+
+
+            <!-- Tutoriels débutants -->
+            <div class="card card-3d p-4 mb-4">
+                <h2 class="section-heading">📖 Tutoriels pour les débutants</h2>
+                <p>La section Apprendre HTML contient plusieurs modules pour vous apprendre à utiliser HTML.</p>
+                <dl>
+                    <dt>Une introduction à HTML</dt>
+                    <dd>Présentation des concepts importants, syntaxe, hyperliens, structuration d’une page.</dd>
+
+                    <dt>Le multimédia et l'intégration</dt>
+                    <dd>Comment intégrer images, vidéos, fichiers audio, ou d’autres pages web.</dd>
+
+                    <dt>Les tableaux HTML</dt>
+                    <dd>Construire des tableaux lisibles avec légendes et résumés.</dd>
+
+                    <dt>Les formulaires HTML</dt>
+                    <dd>Créer des formulaires pour comptes, connexions, achats, etc.</dd>
+
+                    <dt>Utiliser HTML pour résoudre des problèmes courants</dt>
+                    <dd>Ajouter des images, gérer les titres, formulaires, etc.</dd>
+                </dl>
+            </div>
+
+            <!-- Sujets avancés -->
+            <div class="card card-3d p-4 mb-4">
+                <h2 class="section-heading">⚡ Sujets avancés</h2>
+                <dl>
+                    <dt>Images avec contrôle d'accès HTTP</dt>
+                    <dd>Utilisation de <code>crossorigin</code> avec <code>&lt;img&gt;</code> et
+                        <code>&lt;canvas&gt;</code>.
+                    </dd>
+
+                    <dt>Attributs de réglage du CORS</dt>
+                    <dd>Configurer les requêtes CORS pour <code>&lt;img&gt;</code> ou <code>&lt;video&gt;</code>.</dd>
+
+                    <dt>Précharger du contenu avec rel="preload"</dt>
+                    <dd>Optimiser le chargement et améliorer les performances.</dd>
+                </dl>
+            </div>
+
+            <!-- Références -->
+            <div class="card card-3d p-4 mb-4">
+                <h2 class="section-heading">📚 Références</h2>
+                <dl>
+                    <dt>Référence HTML</dt>
+                    <dd>Langage décrivant la structure et le contenu sémantique d'un document web.</dd>
+
+                    <dt>Référence des éléments HTML</dt>
+                    <dd>Liste exhaustive des éléments.</dd>
+
+                    <dt>Liste des attributs HTML</dt>
+                    <dd>Valeurs supplémentaires pour configurer ou ajuster les éléments.</dd>
+                </dl>
+            </div>
+
+            <!-- Sujets connexes -->
+            <div class="card card-3d p-4 mb-4">
+                <h2 class="section-heading">🔗 Sujets connexes</h2>
+                <dl>
+                    <dt>Appliquer des couleurs sur des éléments HTML grâce à CSS</dt>
+                    <dd>Utiliser CSS pour ajouter de la couleur au contenu HTML.</dd>
+                </dl>
+            </div>
+        </div>
+
+        <!-- ✅ Footer -->
+        <footer class="bg-dark text-light py-3 mt-5">
+            <div class="container text-center">
+                <p class="mb-1"><a class="text-info text-decoration-none" href="#">Back to top</a></p>
+                <p class="mb-0">&copy; 2024-2025 Html, Inc. ·
+                    <a class="text-info text-decoration-none" href="#">Privacy</a> ·
+                    <a class="text-info text-decoration-none" href="#">Terms</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
